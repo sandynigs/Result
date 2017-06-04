@@ -1,12 +1,7 @@
 import urllib
 from bs4 import BeautifulSoup
 
- #read actually read whole html page line by line,and here html is just a string hence of entire webpage
-#r = requests.get("http://"+url)
-#data = r.text
-
-#retrieve a list of the anchor tags
-#each tag is like a dictionary of html attributes
+#<------------------------------------------------------------------------------------------------------------------------------------------code for IT branch
 for i in range(15601,15658):
 	url = "http://knit.ac.in/coe/ODD_2016/btreg16xcdaz.asp?rollno="+str(i)
 	print url
@@ -33,6 +28,8 @@ for line in handle:
 	list_h.append((line[0:4],line[10:15]))
 list_h.sort()
 rank = 15657
+print "This code snippet prints the result of IT branch only"
 for i in list_h:
 	print i," rank is",rank
 	rank = rank - 1
+
