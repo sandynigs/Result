@@ -1,7 +1,11 @@
 import urllib
 from bs4 import BeautifulSoup
 
-#<------------------------------------------------------------------------------------------------------------------------------------------code for IT branch
+
+ #<-------------------------------------------------------------------------------------only code for IT branch, followinng the same logic , will work on other branches as well
+
+
+
 for i in range(15601,15658):
 	url = "http://knit.ac.in/coe/ODD_2016/btreg16xcdaz.asp?rollno="+str(i)
 	print url
