@@ -1,7 +1,10 @@
 import urllib
 from bs4 import BeautifulSoup
 
+
  #<-------------------------------------------------------------------------------------only code for IT branch, followinng the same logic , will work on other branches as well
+
+
 
 for i in range(15601,15658):
 	url = "http://knit.ac.in/coe/ODD_2016/btreg16xcdaz.asp?rollno="+str(i)
@@ -29,6 +32,8 @@ for line in handle:
 	list_h.append((line[0:4],line[10:15]))
 list_h.sort()
 rank = 15657
+print "This code snippet prints the result of IT branch only"
 for i in list_h:
 	print i," rank is",rank
 	rank = rank - 1
+
